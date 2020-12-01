@@ -20,5 +20,5 @@
 # Learn more: http://github.com/javan/whenever
 
 every 1.minutes do
-    rake 'cron:deliver_emails'
+    rake 'cron:deliver_emails', :environment => 'development'
 end
