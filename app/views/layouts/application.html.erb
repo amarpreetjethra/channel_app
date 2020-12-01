@@ -13,7 +13,13 @@
     <%= render partial: "shared/navbar" %>
     <%= render partial: "shared/alerts" %>
     <div class="m-3">
+      <div class="row mt-4">
+      <div class="col-2">
+      </div>
+      <div class="col-10">
       <%= yield :header %>
+      </div>
+      </div>
       <div class="row mt-4">
         <div class="col-2">
           <%= yield :vertical_nav %>
