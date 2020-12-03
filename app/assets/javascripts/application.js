@@ -15,6 +15,13 @@
 //= require jquery3
 //= require jquery_ujs
 //= require popper
+//= require jquery.datetimepicker
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+  $(function() {
+    $('#datetimepicker1').datetimepicker({
+      language: 'pt-BR'
+    });
+  });

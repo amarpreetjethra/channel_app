@@ -41,12 +41,12 @@
   </div>
 
   <strong><%= f.label :day %></strong>
-  <%= f.text_field :day, class:"form-control" %>
+  <%= f.select :day, [ 'sunday','monday','tuesday','wednesday','thursday','friday','saturday' ], :prompt => 'Select Day' %>
   <br>
 
   <strong><%= f.label :time %></strong>
-  <%= f.text_field :time, class:"form-control" %><br>
-
+  <%= f.text_field :time,  id: "datetimepicker1" , placeholder: "Select Time"%>
+  
   <%= f.hidden_field :created_by, value: current_user.id %>
   <%= f.submit class: "btn btn-primary" %>
 <% end %>
